@@ -40,6 +40,7 @@
 * @property CI_Xmlrpc $xmlrpc
 * @property CI_Xmlrpcs $xmlrpcs
 * @property CI_Zip $zip
+* @property CI_Migration $migration
 * @property Image_Upload $image_upload
 * @property Lang_Detect $lang_detect
 
@@ -55,5 +56,12 @@ class CI_Controller
  * @property CI_DB $db
  */
 class CI_Model
+{
+}
+
+/**
+ * @property CI_DB_forge $dbforge
+ */
+class CI_Migration
 {
 }

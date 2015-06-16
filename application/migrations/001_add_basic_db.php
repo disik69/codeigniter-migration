@@ -2,7 +2,7 @@
 
 defined('BASEPATH') || exit('No direct script access allowed');
 
-class AddBasicDB extends CI_Migration
+class Migration_Add_basic_db extends CI_Migration
 {
     public function up()
     {

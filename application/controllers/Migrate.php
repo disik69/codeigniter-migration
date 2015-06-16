@@ -15,16 +15,25 @@ class Migrate extends CI_Controller
         }
     }
     
-    public function __call($name, $arguments)
+    public function latest()
     {
-        $result = $this->migration->$name();
-        $result = $this->migration->current();
-        
+        $result = $this->migration->latest();
         
         if ($result) {
             echo $result . PHP_EOL;
         } else {
-            echo 'Error' . PHP_EOL;
+            echo $this->migration->error_string() . PHP_EOL;
+        }
+    }
+    
+    public function current()
+    {
+        $result = $this->migration->current();
+        
+        if ($result) {
+            echo $result . PHP_EOL;
+        } else {
+            echo $this->migration->error_string() . PHP_EOL;
         }
     }
 }

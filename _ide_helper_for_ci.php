@@ -61,6 +61,7 @@ class CI_Model
 
 /**
  * @property CI_DB_forge $dbforge
+ * @property CI_DB $db
  */
 class CI_Migration
 {

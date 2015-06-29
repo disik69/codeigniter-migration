@@ -6,8 +6,7 @@ class Test extends MY_Controller
 {
     public function index()
     {
-        write_to_log($_ENV);
-        echo '!!!';
+        
     }
 }
 

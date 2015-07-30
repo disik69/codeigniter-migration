@@ -32,7 +32,7 @@ class Migration_Add_basic_db extends CI_Migration
         $this->dbforge->add_field('collocation_id INT (11) UNSIGNED NOT NULL');
         $this->dbforge->add_field('alt_rus VARCHAR (255) NULL');
         $this->dbforge->add_field('PRIMARY KEY (id)');
-        $this->dbforge->add_field('FOREIGN KEY (lesson_id) REFERENCES lesson (id) ON UPDATE CASCADE ON DELETE CASCADE');
+        $this->dbforge->add_field('FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON UPDATE CASCADE ON DELETE CASCADE');
         $this->dbforge->add_field('FOREIGN KEY (collocation_id) REFERENCES collocations (id) ON UPDATE CASCADE');
         $this->dbforge->create_table('collocation_lesson', true);
         
